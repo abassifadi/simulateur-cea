@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fadi.simulateurcea.CalculateurFragement">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:text="Parametres :"
+        android:background="@color/background"
+        android:textColor="@color/white"
+
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Situation familiale"
+            android:layout_marginTop="20dp"
+            />
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/situation_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enfant a charge"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Revenu annuel brut imposable"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Montant du CEA"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Calculate"
+            android:layout_marginTop="25dp"
+            android:background="@color/background"
+            android:textColor="@color/white"
+
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

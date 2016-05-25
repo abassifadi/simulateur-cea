@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SimulateurCEA</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question_1_cea">Qu est ce que le CEA?</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_app_id">128721</string>
+    <string-array name="situation_familiale">
+        <item>Celibataire</item>
+        <item>Marie(e)</item>
+        <item>Divorce(e)</item>
+        <item>Veuf(ve)</item>
+    </string-array>
+</resources>

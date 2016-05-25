@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/information"
+            android:icon="@mipmap/info_icon_2"
+            android:title="Consulter Information" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/map_icon"
+            android:title="Trouver un Intermediare" />
+
+        <item
+            android:id="@+id/calcul_interet"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Calcul interet" />
+
+        <item
+            android:id="@+id/quiz"
+            android:icon="@drawable/mr_ic_play_dark"
+            android:title="Quiz" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="A propos" />
+
+        </menu>
+    </item>
+
+</menu>

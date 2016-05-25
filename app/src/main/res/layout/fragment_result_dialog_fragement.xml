@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.fadi.simulateurcea.ResultDialogFragement"
+    android:padding = "5dp"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:textColor="@color/white"
+        android:text="Resultat"
+        />
+      <!-- Line 1 -->
+    <LinearLayout
+
+        android:layout_marginTop="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Impôt dû avant CEA"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            />
+
+        <TextView
+            android:id="@+id/revenu_annuel_net_imposable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="32dp"
+            android:text="0.00"
+            />
+
+
+    </LinearLayout>
+        <!-- End Of Line 1 -->
+     <!-- Start Line 2   -->
+        <LinearLayout
+
+            android:layout_marginTop="5px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Impôt dû avant CEA"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                />
+
+            <TextView
+                android:id="@+id/impot_avant_cea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:layout_marginRight="32dp"
+                android:text="0.00"
+                />
+
+
+        </LinearLayout>
+     <!-- End Of line 2 -->
+
+    </LinearLayout>
+
+</FrameLayout>

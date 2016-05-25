@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.fadi.simulateurcea.MainActivity"/>
+      <point      
+        x = "1732"      
+        y = "-20"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.fadi.simulateurcea.Splash"/>
+      <point      
+        x = "348"      
+        y = "108"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
