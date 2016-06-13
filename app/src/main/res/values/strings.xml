@@ -18,4 +18,9 @@
         <item>Divorce(e)</item>
         <item>Veuf(ve)</item>
     </string-array>
+    <string-array name="situation_professionel">
+        <item>Salarie</item>
+        <item>Retraite</item>
+        <item>Profession Liberale</item>
+    </string-array>
 </resources>

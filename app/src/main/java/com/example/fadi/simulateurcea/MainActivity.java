@@ -20,7 +20,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener  {
+        implements NavigationView.OnNavigationItemSelectedListener   {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         else if (id == R.id.nav_share) {
-
+              fragment = new Apropos();
         }
 
         android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();

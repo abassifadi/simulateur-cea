@@ -23,9 +23,15 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.Vector;
+
+import map.Intermediare;
+import map.IntermediareGenerator;
 
 
 /**
@@ -133,8 +139,30 @@ public class GMapFragement extends Fragment implements OnMapReadyCallback,Locati
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
                 googleMap.addMarker(new MarkerOptions().position(new LatLng(myLocation.getLatitude(), myLocation.getLongitude())).title("Marker"));
+                IntermediareGenerator intermediaterGen  = new IntermediareGenerator();
+                Vector<Intermediare> intermediaireList = intermediaterGen.getIntermedaires();
+        Location locationB = new Location("point");
+        Location nerest = new Location("Nearest") ;
+        nerest.setLatitude(intermediaireList.elementAt(0).getLatitude());
+        nerest.setLongitude(intermediaireList.elementAt(0).getLongitude());
+        float distance =0;
+        for (Intermediare i: intermediaireList)
 
+        {
+            locationB.setLatitude(i.getLatitude());
+            locationB.setLongitude(i.getLongitude());
+            distance = myLocation.distanceTo(locationB);
+            if(distance< myLocation.distanceTo(nerest))
+            {  //googleMap.addMarker(new MarkerOptions().position(new LatLng(i.getLatitude(), i.getLongitude())).title(i.getNom()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                nerest.setLatitude(i.getLatitude());
+                nerest.setLongitude(i.getLongitude());
+            }
+        }
 
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(nerest.getLatitude(), nerest.getLongitude())).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+              //  googleMap.addMarker(new MarkerOptions().position(new LatLng(36.843340, 10.197796)).title("TSI").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                //googleMap.addMarker(new MarkerOptions().position(new LatLng(36.849016, 10.195920)).title("Tunisie Valeurs").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        //googleMap.addMarker(new MarkerOptions().position(new LatLng(36.843340, 10.197796)).title("TSI").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
 
     }

@@ -30,17 +30,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Impôt dû avant CEA"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:text="Revenu Anuuel Net"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             />
 
         <TextView
             android:id="@+id/revenu_annuel_net_imposable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="52dp"
-            android:layout_marginRight="32dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="0.00"
             />
 
@@ -59,24 +59,151 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Impôt dû avant CEA"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:text="Impot dû Avant CEA"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 />
 
             <TextView
                 android:id="@+id/impot_avant_cea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="52dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="2.00dp"
                 android:text="0.00"
                 />
 
 
         </LinearLayout>
      <!-- End Of line 2 -->
+        <!-- Start Line 3  -->
+        <LinearLayout
 
+            android:layout_marginTop="5px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum d inpot"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/minimum_impot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="2.00dp"
+                android:text="0.00"
+                />
+
+
+        </LinearLayout>
+        <!-- End Of line 3 -->
+        <!-- Start Line 4  -->
+        <LinearLayout
+
+            android:layout_marginTop="5px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Impot dû apres CEA "
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/impot_apres_cea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="2.00dp"
+                android:text="0.00"
+                />
+
+
+        </LinearLayout>
+        <!-- End Of line 4 -->
+
+        <!-- Start Line 5  -->
+        <LinearLayout
+
+            android:layout_marginTop="5px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gain Impot Annuel "
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/gain_impot_annuel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="2.00dp"
+                android:text="0.00"
+                />
+
+
+        </LinearLayout>
+        <!-- End Of line 5 -->
+        <!-- Start Line 5  -->
+        <LinearLayout
+
+            android:layout_marginTop="5px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gain Impot en % "
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/gain_impot_pourcentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="2.00dp"
+                android:text="0.00"
+                />
+
+
+        </LinearLayout>
+        <!-- End Of line 5 -->
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:textColor="@color/white"
+            android:text=""
+            />
     </LinearLayout>
+
+
 
 </FrameLayout>
